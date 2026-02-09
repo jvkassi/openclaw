@@ -1,0 +1,14 @@
+volumes:
+  data:
+  config:
+
+services:
+  openclaw:
+    env_file: .env
+    build: .
+    restart: always
+    ports:
+      - 18789
+    volumes:
+      - ./data:/home/node/.openclaw
+      - ./config:/home/node/.config
