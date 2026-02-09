@@ -10,5 +10,5 @@ services:
     ports:
       - 18789
     volumes:
-      - ./data:/home/node/.openclaw
-      - ./config:/home/node/.config
+      - data:/home/node/.openclaw
+      - config:/home/node/.config
