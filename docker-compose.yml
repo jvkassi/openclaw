@@ -8,6 +8,7 @@ services:
     build: .
     restart: always
     ports:
+      - 80
       - 18789
     volumes:
       - data:/home/node/.openclaw
