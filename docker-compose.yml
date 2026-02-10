@@ -4,7 +4,6 @@ volumes:
 
 services:
   openclaw:
-    env_file: .env
     build: .
     restart: always
     ports:
