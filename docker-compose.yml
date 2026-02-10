@@ -10,6 +10,7 @@ services:
     ports:
       - 80
       - 18789
+      - 51121:51121
     volumes:
       - data:/home/node/.openclaw
       - config:/home/node/.config
