@@ -1,4 +1,4 @@
-FROM alpine/openclaw:2026.2.13
+FROM alpine/openclaw:2026.2.19
 
 USER root
 
