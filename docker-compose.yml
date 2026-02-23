@@ -6,11 +6,11 @@ services:
   openclaw:
     build: .
     restart: always
-    ports:
+    expose:
       - 80
       - 8787
       - 18789
-      - 51121:51121
+      - 51121
     volumes:
       - data:/home/node/.openclaw
       - config:/home/node/.config
