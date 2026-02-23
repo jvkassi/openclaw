@@ -1,6 +1,5 @@
 volumes:
-  data:
-  config:
+  home:
 
 services:
   openclaw:
@@ -12,5 +11,4 @@ services:
       - 18789
       - 51121
     volumes:
-      - data:/home/node/.openclaw
-      - config:/home/node/.config
+      - home:/home/node
