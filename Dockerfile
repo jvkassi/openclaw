@@ -1,4 +1,4 @@
-FROM alpine/openclaw:2026.2.21
+FROM alpine/openclaw:2026.2.26
 
 USER root
 
@@ -32,3 +32,4 @@ RUN bunx playwright install-deps chromium && \
     bunx playwright install chromium
 RUN bun add -g agent-browser
 RUN agent-browser install --with-deps
+RUN bun add -g opencode-ai
