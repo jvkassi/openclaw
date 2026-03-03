@@ -1,4 +1,4 @@
-FROM alpine/openclaw:2026.3.1
+FROM alpine/openclaw:2026.3.2
 
 USER root
 
