@@ -26,6 +26,7 @@ RUN ls -l /home/node/.bun/bin/bun
 RUN source /home/node/.bashrc
 RUN /home/node/.bun/bin/bun --version
 
+RUN bun pm -g untrusted
 RUN bun install -g https://github.com/tobi/qmd
 RUN npm i -g playwright
 RUN bunx playwright install-deps chromium && \
