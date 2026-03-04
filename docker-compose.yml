@@ -12,3 +12,4 @@ services:
       - 51121
     volumes:
       - home:/home/node
+      - /var/run/docker.sock:/var/run/docker.sock
