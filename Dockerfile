@@ -36,7 +36,7 @@ RUN bun add -g agent-browser
 RUN agent-browser install --with-deps
 
 # Install qmd , for memory management
-RUN bun install --trust -g https://github.com/tobi/qmd
+RUN bun install -g @tobilu/qmd
 
 # Add opencode
 RUN bun add -g opencode-ai
