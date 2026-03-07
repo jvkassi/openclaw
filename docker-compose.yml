@@ -13,3 +13,4 @@ services:
     volumes:
       - home:/home/node
       - /var/run/docker.sock:/var/run/docker.sock
+      - /tmp/tmux-1000:/tmp/tmux-1000
