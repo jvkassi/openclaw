@@ -5,7 +5,7 @@ FROM alpine/openclaw:2026.3.2
 USER root
 
 RUN apt update -q
-RUN apt install chromium iproute2 sudo -y
+RUN apt install chromium iproute2 sudo tmux screen -y
 RUN apt install vim inetutils-ping netcat-traditional jq -y
 RUN ln -s /app/openclaw.mjs /bin/openclaw
 
@@ -43,3 +43,5 @@ RUN bun add -g opencode-ai
 
 # Install himalya
 RUN curl -sSL https://raw.githubusercontent.com/pimalaya/himalaya/master/install.sh | PREFIX=~/.local sh
+
+RUN tmux new -d
