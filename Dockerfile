@@ -1,5 +1,5 @@
 # Look here for latest version alpine/openclaw - Docker Image
-FROM alpine/openclaw:2026.3.2
+FROM alpine/openclaw:2026.3.11
 
 # Switch to root , to install packages
 USER root
