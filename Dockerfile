@@ -1,5 +1,5 @@
 # Look here for latest version alpine/openclaw - Docker Image
-FROM alpine/openclaw:2026.3.12
+FROM ghcr.io/openclaw/openclaw:2026.3.31-slim
 
 # Switch to root , to install packages
 USER root
