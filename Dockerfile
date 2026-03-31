@@ -36,6 +36,7 @@ RUN bun add -g agent-browser
 RUN agent-browser install --with-deps
 
 # Install qmd , for memory management
+RUN bun pm -g untrusted
 RUN bun install -g @tobilu/qmd
 
 # Add opencode
