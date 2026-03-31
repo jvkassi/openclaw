@@ -5,7 +5,7 @@ FROM ghcr.io/openclaw/openclaw:2026.3.31-slim
 USER root
 
 RUN apt update -q
-RUN apt install chromium iproute2 sudo tmux screen -y
+RUN apt install chromium iproute2 sudo tmux screen  unzip -y
 RUN apt install vim inetutils-ping netcat-traditional jq -y
 RUN ln -s /app/openclaw.mjs /bin/openclaw
 
